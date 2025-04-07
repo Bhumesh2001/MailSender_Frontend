@@ -41,7 +41,10 @@ export default function MailSender() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        document.querySelector('.list-group').innerHTML = '';
+
+        const logList = document.querySelector('.list-group');
+        if (logList) logList.innerHTML = '';
+
         setLoading(true); // Start loading
 
         const formDataToSend = new FormData();
