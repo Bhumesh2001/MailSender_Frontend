@@ -18,7 +18,9 @@ export default function MailSender() {
 
     useEffect(() => {
         socket.on("emailLog", (log) => {
-            setMailLogs((prevLogs) => [...prevLogs, `${log.status} to: ${log.recipient} at ${new Date(log.time).toLocaleString()}`]);
+            setMailLogs((prevLogs) => [
+                ...prevLogs, `${log.status} to: ${log.recipient} at ${new Date(log.time).toLocaleString()}`
+            ]);
         });
 
         return () => socket.off("emailLog");
