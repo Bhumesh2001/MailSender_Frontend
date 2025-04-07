@@ -49,7 +49,7 @@ export default function MailSender() {
             if (value) formDataToSend.append(key, value);
         });
 
-        await fetch("http://localhost:5000/api/emails/send", {
+        await fetch("https://mail-sender-backend-tan.vercel.app/api/emails/send", {
             method: "POST",
             body: formDataToSend,
         });
