@@ -54,7 +54,7 @@ export default function MailSender() {
             if (value) formDataToSend.append(key, value);
         });
 
-        await fetch("https://mail-sender-backend-tan.vercel.app/api/emails/send", {
+        await fetch("https://mailsender-backend-44fo.onrender.com/api/emails/send", {
             method: "POST",
             body: formDataToSend,
         });
