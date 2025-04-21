@@ -77,7 +77,7 @@ export default function MailSender() {
                         <Card.Body>
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Email</Form.Label>
+                                    <Form.Label>Email <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <InputGroup>
                                         <InputGroup.Text><Envelope /></InputGroup.Text>
                                         <Form.Control
@@ -92,7 +92,7 @@ export default function MailSender() {
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>App Password</Form.Label>
+                                    <Form.Label>App Password <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <InputGroup>
                                         <InputGroup.Text><Lock /></InputGroup.Text>
                                         <Form.Control
@@ -107,7 +107,7 @@ export default function MailSender() {
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>HR Emails</Form.Label>
+                                    <Form.Label>HR Emails <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <Form.Control
                                         as="textarea"
                                         name="hrEmails"
@@ -120,7 +120,7 @@ export default function MailSender() {
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Subject</Form.Label>
+                                    <Form.Label>Subject <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="subject"
@@ -132,7 +132,7 @@ export default function MailSender() {
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Body</Form.Label>
+                                    <Form.Label>Body <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <Form.Control
                                         as="textarea"
                                         name="body"
@@ -145,7 +145,7 @@ export default function MailSender() {
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Attach File</Form.Label>
+                                    <Form.Label>Attach File <span><i class="bi bi-asterisk text-danger"></i></span></Form.Label>
                                     <InputGroup>
                                         <InputGroup.Text><FileEarmarkText /></InputGroup.Text>
                                         <Form.Control

@@ -60,3 +60,7 @@ body {
   border-top-right-radius: 5px;
   padding: 12px 0px 12px 0px;
 }
+
+.bi-asterisk{
+  font-size: 10px;
+}
